@@ -9,8 +9,10 @@ function App() {
 
   const handleKeyDown = async (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
-      await invoke('add_task', { content });
-      setContent("");
+      if (content.length) {
+        await invoke('add_task', { content });
+        setContent("");
+      }
       await invoke('hide_window');
     }
   }

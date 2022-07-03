@@ -67,7 +67,9 @@
         "title": "Focus",
         "width": 800,
         "decorations": false,
-        "center": true
+        "center": true,
+        "alwaysOnTop": true,
+        "focus": true
       }
     ]
   }

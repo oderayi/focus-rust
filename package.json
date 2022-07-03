@@ -8,8 +8,8 @@
     "preview": "vite preview",
     "tauri": "tauri",
     "run-dev": "tauri dev",
-    "app-build": "tauri build",
-    "deploy-local": "sudo cp -f src-tauri/target/release/bundle/appimage/focus_0.1.0_amd64.AppImage /usr/bin/focus"
+    "build:app": "tauri build",
+    "deploy:dev": "sudo cp -f src-tauri/target/release/bundle/appimage/focus_0.1.0_amd64.AppImage /usr/bin/focus"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.0.1",

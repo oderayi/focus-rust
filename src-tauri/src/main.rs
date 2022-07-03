@@ -38,6 +38,8 @@ fn show_window(app: AppHandle) {
     let menu_item = app.tray_handle().get_item("toggle");
     window.show().expect("unable to show window");
     window.center().expect("unable to center window");
+    window.set_always_on_top(true).expect("error setting window to always on top");
+    window.set_focus().expect("unable to focus window");
     menu_item
         .set_title("Hide")
         .expect("unable to set window title");
